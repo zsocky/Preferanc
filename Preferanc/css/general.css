@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 1.4;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  -ms-overflow-style: none;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  overflow: visible;
+}
+
+/* .wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    animation: pulse 2.3s infinite;
+    height: 100%;
+    width: 100%;
+    transform-origin: 50% 30%;
+    transform: translateX(-50%);
+    background: radial-gradient(50% 80% at 50% 40%, rgba(255, 255, 255, 0.12), transparent 75%);
+    z-index: 1;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    65% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+} */
+
+article {
+  color: #fff;
+  max-width: 1280px;
+  margin: 5rem auto 300px;
+}
+
+section {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+}
+
+:root {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  white-space: nowrap;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lobster Two", cursive;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+}
+
+.pretitle {
+  text-align: center;
+}
+
+h2::after,
+h3::after,
+h4::after,
+h5::after,
+h6::after {
+  content: "";
+  height: 90%;
+  width: 100%;
+  background: url("../images/title&subtitle/pretitle.png");
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+}
+
+.title {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 7em;
+  display: inline-block;
+  font-style: italic;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 22px -11px 3px #000, -1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin: 0 0 4rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 3.5em;
+  margin: 0 0 3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 50px;
+  display: inline-block;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+h6 {
+  color: #fff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: 5px 0 1rem;
+  letter-spacing: 2px;
+  padding-left: 30px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-8 {
+  width: 66.6%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.3%;
+}
+
+.col-3 {
+  width: 25%;
+}

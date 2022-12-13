@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <link rel="stylesheet" href="/css/footer.css" />
+  </head>
+  <body>
+    <style>
+      .prefooter {
+        background: #000;
+        background-size: contain;
+        padding: 0 0 5rem;
+        color: #fff;
+        position: relative;
+      }
+
+      .prefooter::before {
+        content: "";
+        position: absolute;
+        top: -290px;
+        left: 0;
+        height: 300px;
+        width: 100%;
+        background: url(../images/flame.png) no-repeat top center;
+        background-size: cover;
+        z-index: 1;
+      }
+
+      .prefooter .row {
+        padding: 0 2rem;
+        text-align: justify;
+      }
+
+      .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .col-12 {
+        width: 100%;
+      }
+
+      .col-9 {
+        width: 75%;
+      }
+
+      .col-9-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .col-8 {
+        width: 66.6%;
+      }
+
+      .col-6 {
+        width: 50%;
+      }
+
+      .col-4 {
+        width: 33.3%;
+      }
+
+      .col-3 {
+        width: 25%;
+      }
+
+      .prefooter hr {
+        border-top-color: #bbb;
+        opacity: 0.5;
+        margin: 5rem 0;
+      }
+
+      .flex p {
+        margin: 0;
+        line-height: 2em;
+        text-align: left;
+      }
+
+      p {
+        margin: 0 0 3rem;
+        line-height: 2em;
+        text-align: justify;
+      }
+
+      .logo_img {
+        background-image: url(../images/test_logo_2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 120px;
+      }
+
+      .align_right {
+        align-self: flex-end;
+      }
+
+      .footer-links {
+        list-style: none;
+      }
+
+      .copyright-text {
+        margin: 0;
+      }
+
+      .social_icons {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        line-height: initial;
+      }
+
+      .social_icons li {
+        position: relative;
+        list-style: none;
+        margin: 0 10px;
+        cursor: pointer;
+      }
+
+      .social_icons li a {
+        text-decoration: none;
+      }
+
+      .social_icons li a .fa-brands {
+        font-size: 2em;
+        color: #222;
+      }
+
+      .social_icons li a::before {
+        font-family: "FontAwesome";
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 2em;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+      }
+
+      .social_icons li:nth-child(1) a::before {
+        content: "\f16d";
+        background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-bottom: 2px solid #dc2743;
+      }
+
+      .social_icons li:nth-child(2) a::before {
+        content: "\f232";
+        color: #25d366;
+        border-bottom: 2px solid #25d366;
+      }
+
+      .social_icons li:nth-child(3) a::before {
+        content: "\f082";
+        background-image: linear-gradient(#18aefe 0%, #026ae3 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-bottom: 2px solid #026ae3;
+      }
+
+      .social_icons li:hover a::before {
+        height: 100%;
+      }
+
+      .prefooter a,
+      .prefooter .name {
+        font-weight: 500;
+        color: rgb(99, 99, 99);
+        transition: 0.5s;
+      }
+
+      .prefooter .copyright-text a:hover,
+      .prefooter .copyright-text .name:hover,
+      .prefooter .footer-links a:hover {
+        color: #fff;
+        text-shadow: 0 0 5px orange, 0 0 6px orange, 0 0 7px orange, 0 0 8px orange;
+      }
+    </style>
+    <footer>
+      <hr />
+      <div class="row flex">
+        <div class="col-9 col-9-flex">
+          <div class="col-3 logo_img"></div>
+          <div class="col-4">
+            <h6>About</h6>
+            <p><em>PREFERÁNC</em> CARD GAME IS A SLIGHTLY MODIFIED <em>PRÉFÉRENCE</em> CARD GAME !</p>
+          </div>
+        </div>
+        <div class="col-3 align_right">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="/main.html">Home</a></li>
+            <li><a href="#!">Forum</a></li>
+            <li><a href="/game_rules.html">Game Rules</a></li>
+            <li><a href="/privacy.html" target="_blank">Privacy Policy</a></li>
+            <li><a href="/sitemap.html" target="_blank">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="row flex">
+        <div class="col-9">
+          <p class="copyright-text">
+            Copyright &copy; 2023 All Rights Reserved by
+            <a href="https://paskuyzsolt.com/" target="_blank" title="Paskuy Zsolt Portfolio">Paskuy Zsolt</a> and <span class="name">Csiszer Norbert</span>.
+          </p>
+        </div>
+        <div class="col-3">
+          <ul class="social_icons">
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-whatsapp whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

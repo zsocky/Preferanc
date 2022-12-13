@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/in-game-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/64fdd7ac03.js" crossorigin="anonymous"></script>
+    <title>Table</title>
+  </head>
+  <body>
+    <div class="table">
+      <div class="wrapper gradient-border">
+        <div class="box_talon talon">
+          <h2>Talon</h2>
+          <div id="talon_card"><button type="button" disabled id="one"></button><button type="button" disabled id="two"></button></div>
+        </div>
+        <div class="box_player" id="player_one_deck">
+          <button id="player_one_deck_one card"></button><button id="player_one_deck_two card"></button><button id="player_one_deck_three card"></button
+          ><button id="player_one_deck_four card"></button><button id="player_one_deck_five card"></button><button id="player_one_deck_six card"></button
+          ><button id="player_one_deck_seven card"></button><button id="player_one_deck_eight card"></button><button id="player_one_deck_nine card"></button
+          ><button id="player_one_deck_ten card"></button>
+        </div>
+        <div class="row">
+          <div class="box_player" id="player_two_deck">
+            <button id="player_two_deck_one card"></button> <button id="player_two_deck_two card"></button> <button id="player_two_deck_three card"></button>
+            <button id="player_two_deck_four card"></button> <button id="player_two_deck_five card"></button> <button id="player_two_deck_six card"></button>
+            <button id="player_two_deck_seven card"></button> <button id="player_two_deck_eight card"></button>
+            <button id="player_two_deck_nine card"></button> <button id="player_two_deck_ten card"></button>
+          </div>
+          <div class="swich">
+            <div id="played_deck"></div>
+            <div class="container" id="game_mode">
+              <div class="dropdown">
+                <div class="select"><span>Select Game Mode</span><i class="fa-solid fa-arrow-down"></i></div>
+                <ul class="dropdown-menu">
+                  <li>Zold</li>
+                  <li>Sarga</li>
+                  <li>Piros</li>
+                  <li>Makk</li>
+                  <li>Betli</li>
+                  <li>Szanadu</li>
+                  <li>Mizer</li>
+                  <li>Pikolo</li>
+                  <li id="preferanc"><span class="preferanc">Preferanc</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="box_player" id="player_three_deck">
+            <button id="player_three_deck_one card"></button> <button id="player_three_deck_two card"></button>
+            <button id="player_three_deck_three card"></button> <button id="player_three_deck_four card"></button>
+            <button id="player_three_deck_five card"></button> <button id="player_three_deck_six card"></button>
+            <button id="player_three_deck_seven card"></button> <button id="player_three_deck_eight card"></button>
+            <button id="player_three_deck_nine card"></button> <button id="player_three_deck_ten card"></button>
+          </div>
+        </div>
+        <video id="wrapper-video" autoplay muted loop>
+          <source src="video/firespark.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="auction_bar">
+        <div class="pass">
+          <h3><span style="--i: 1">p</span><span style="--i: 2">a</span><span style="--i: 3">s</span><span style="--i: 4">s</span></h3>
+        </div>
+        <div class="raise">
+          <h3>
+            <span style="--i: 1">r</span><span style="--i: 2">a</span><span style="--i: 3">i</span><span style="--i: 4">s</span><span style="--i: 5">e</span>
+          </h3>
+        </div>
+        <div class="play">
+          <h3><span style="--i: 1">p</span><span style="--i: 2">l</span><span style="--i: 3">a</span><span style="--i: 4">y</span></h3>
+        </div>
+      </div>
+    </div>
+    <div class="popup-box">
+      <video id="popup-video" autoplay muted>
+        <source src="video/fire.mp4" type="video/mp4" />
+      </video>
+      <p></p>
+    </div>
+    <div class="loader-wrapper">
+      <div class="image-loader"><img src="images/load_logo.jpg" alt="" /></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/decorative.js"></script>
+    <script type="module" src="js/shuffle.js"></script>
+  </body>
+</html>
